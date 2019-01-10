@@ -1,0 +1,71 @@
+-YASH PRADHAN (ypp170130)
+-MEETIKA SHARMA (mxs173530)
+Results:
+-------------------------------------------------------------------
+Results on Dataset 1
+
+Pre Pruned Accuracy
+-------------------------
+Number of training instances = 600
+Number of training attributes = 20
+Total number of nodes in the tree = 275
+Total number of leaf nodes in the tree = 138.0
+Accuracy of the model on the training dataset = 100.0
+
+Number of validation instances = 2000
+Number of validation attributes = 20
+Accuracy of the model on the validation dataset before pruning =  75.9
+
+Number of testing instances = 2000
+Number of testing attributes = 20
+Accuracy of the model on the testing dataset = 75.85
+
+
+
+Results on Dataset 2
+
+Pre Pruned Accuracy
+-------------------------
+Number of training instances = 600
+Number of training attributes = 20
+Total number of nodes in the tree = 285
+Total number of leaf nodes in the tree = 143.0
+Accuracy of the model on the training dataset = 99.83333333333333
+
+Number of validation instances = 600
+Number of validation attributes = 20
+Accuracy of the model on the validation dataset before pruning =  77.16666666666666
+
+Number of testing instances = 600
+Number of testing attributes = 20
+Accuracy of the model on the testing dataset = 72.33333333333334
+
+
+-Best accuracy of our algorithm on testing data(Data Set1) is 75.85%.
+
+
+
+-DESCRIPTION OF THE PROGRAM
+ -Read training, validation and test dataset from the User, and loading using csv reader.
+ -call to createTree() which in turns calls the findBestAttribute() to find the best attribute to split upon by calculating the information gain of every attribute and returns a decision tree.
+ -calculateAccuracy() calculates the accuracy of the model on the test data by calling classify().
+ -printTree() prints the tree in the desired format.
+
+
+Accomplishment:
+-------------------------------------------------------------------
+-We implemented a decision tree classifier using ID3 algorithm.
+-We used dictionaries in python for representing the tree.
+
+
+Learning: 
+-------------------------------------------------------------------
+-We learned that whenever feature space is large and the number of instances available is small, the tree tends to overfit on the training data 	e.g In our algorithm, we got the accuracy of 100% on the training data before pruning.
+-We learned that pruning overcomes overfitting.
+-We learned how to use dictionaries to implement hierarchical structure in python.
+
+
+References: 
+-------------------------------------------------------------------
+-Dive into python: Mark Pilgrim
+-Concepts of Data Mining: Han and Kamber
